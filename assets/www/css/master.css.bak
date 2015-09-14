@@ -1,0 +1,536 @@
+@media screen and (min-width:220px)
+{
+    html
+    {
+        position: relative;
+        min-height: 100%;
+    }
+
+     .master-page
+    {
+    margin-top:-22px !important;
+    }
+    body
+    {
+        /* Margin bottom by footer height */
+        margin-bottom: 55px;
+        font-family: segoe UI !important;
+        overflow:scroll;
+		text-shadow:none !important;
+		font-weight:normal !important;
+    }
+	a{
+	text-shadow:none !important;
+	font-weight:normal !important;
+		text-decoration:none !important;
+	}
+	button{
+	text-shadow:none !important;
+	font-weight:normal !important;
+	}
+	a:visited{
+	
+	text-decoration:none !important;
+	}
+	a:hover {
+      text-decoration: none !important ;
+}
+
+a:active {
+      text-decoration: none  !important;
+}
+.default-color{
+color:#000 !important;
+}
+.menu{
+height:25px;
+margin-top:15px;
+}
+    .header
+    {
+        background-image:url('Logo_BG.png');       
+        text-align:center;
+        height:120px;
+    }
+	.header-inner{
+	 background-image:url('header.png');   
+	 height:60px;
+	   background-size: cover;
+	}
+	.back-nav{
+	 float:left;
+	 margin-left:20px;
+	 margin-top:15px;
+	 height:30px;
+	 width:20px;
+	}
+	.company-logo{
+	  position: relative;
+  width: 100px;
+  margin: auto;
+  top: 30px;
+	}
+	
+    #circle 
+    {
+	width: 80px;
+	height: 80px;
+    /*background-color:black;*/
+	background-image:url('header.png');
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;	
+/* 	left:50%;
+	transform:translate(-50%); */
+    margin:auto;
+    position:relative;
+  
+  top: 33px;
+
+    z-index: 99;  
+}
+
+ .header-circle
+{
+    height:70px;
+    width:70px;
+    position:relative;    
+	z-index:101;
+    top:5px;
+	margin: auto;
+}
+
+   .contentDashboard
+   {
+   padding:0px;
+
+   } 
+    .headerlogoimg
+    {
+    position:absolute;
+    left:50%;
+      }
+    
+
+    .ui-icon-customnavbaricon:after
+     {
+	background-image: url("nav-bar.png");
+   }
+/* Fallback */
+   .ui-nosvg .ui-icon-customnavbaricon:after 
+   {
+	background-image: url("nav-bar.png");
+   }
+
+    .widgetfooter
+    {
+        height:45px;
+        text-align: center;
+		padding:10px;
+	  background: #0B172D !important;
+
+	  border:none !important;
+    }
+	.slide-footer{
+margin:0;
+padding:0;
+list-style:none;
+text-align:center;
+}
+
+.slide-icons{
+display:inline-block;
+position:relative;
+}
+      
+    .slide-footer li img
+    {
+       height:40px;
+       
+    }
+	.notifications{
+width:15px;
+height:15px;
+border-radius:50%;
+position:absolute;
+top:0px;
+right:0px;
+color:#fff;
+text-align:center;
+font-size:10px;
+}
+.notifications span{
+font-size:8px;
+}
+.background-red{
+background:#DD584F;
+}
+.background-green{
+background:#2DAC95 !important;
+}
+.background-blue{
+background:#438EBF !important;
+}
+.background-purple{
+background:#9B58B5 !important;
+}
+.background-yellow{
+background:#E1A545 !important;
+position:relative;
+}
+.background-grey{
+background:#13233D !important;
+}
+   
+    .menu-image{
+	height:30px;
+	width:30px;
+	}
+	.navigation{
+	background:#31334A;
+	}
+	.navbar-nav {
+  margin: 7.5px -15px;
+}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav li:first-child {
+  background: #13152A;
+}
+.nav  li {
+  position: relative;
+  display: block;
+  PADDING:15PX;
+}
+.navbar-nav  li  a {
+color:#fff;
+text-decoration:none;
+  font-family: segoe UI;
+  font-weight:normal;
+  font-size:14px;
+}
+.navbar-nav  li  a:hover{
+text-decoration:none;
+color:#fff;
+}
+.navbar-nav li:nth-child(odd) {
+  background: #373952;
+}
+/*apply leave*/
+.padding-5{
+padding:5px;
+padding-right:10px;
+padding-left:10px;
+}
+.inline-image{
+display:inline;
+height:20px;
+height:20px;
+}
+label{
+font-weight:600 !important;
+font-size:14px !important;
+}
+.form-control-select{
+width:100%;
+height:35px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+}
+.checkBx-inline{
+display:inline-block;
+}
+.form-body-grey{
+
+  background: #28344C;
+  width: 100%;
+ padding:10px;
+ height:100%;
+}
+.form-body-grey h5{
+color:#fff !important;
+font-weight:normal;
+margin:0;
+margin-bottom:10px;
+display:inline-block;
+text-shadow:none !important;
+}
+.pageTitle h4{
+width: 156px;
+  margin: auto;
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: none;
+  font-weight: normal;
+  font-size: 18px;
+}
+.form-body-grey img{
+height:13px;
+}
+.form-body-inner
+{
+  background: #DCE1E7;
+  height:100%;
+  padding:10px;
+}
+.day-box
+ {
+  width: 100%;
+  height: 25px;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+  padding-top: 7px;
+  position: relative;
+}
+.day-box p{
+  margin: -1px;
+  font-size: 14px;
+}
+.page{
+height:100%;
+}
+.btn-form{
+ width:115px !important;
+  /* height: 30px !important; */
+  color: #fff !important;
+  font-weight: normal;
+  border-radius:20px !important;
+  font-size:16px;
+  border:none !important;
+  padding:5px;
+}
+.footer-content{
+text-align:center;
+}
+.float-right{
+float:right;
+margin-right:10px !important;
+}
+.ui-fixed-hidden{
+position:fixed !important;
+padding-bottom:8px!important;
+padding:10px !important;
+}
+/* worklist*/
+.worklist{
+  list-style: none;
+  padding: 0;
+  margin:0;
+  }
+  .inner-leaves-box
+   {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+.upper-leave-text p{
+margin:0;
+color:#fff;
+text-shadow:none !important;
+}
+.lower-leave-text p{
+float:right;
+text-shadow:none !important;
+color:#fff;
+}
+.employee-info {
+width:51% !important;
+}
+.employee-info h6{
+  margin: 0;
+  font-size: 11px;
+}
+.employee-info p{
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 8px;
+/*   color:#B3B7C0; */
+}
+.employee-info h5{
+  font-size: 14px;
+  color: #000 !important;
+  margin-bottom: 0px;
+}
+.worklist-side-buttons{
+width:12% !important;
+}
+.worklist-side-buttons div:nth-child(2){
+margin-top:12px;
+}
+.worklist li{
+border-bottom:1px solid #ccc;
+  background-color: #fff;
+  padding-left: 10px;
+}
+}
+.action-square{
+
+  width: 25px;
+  height: 26px;
+  padding: 3px,1px,4px,3px;
+  padding-top: 2px;
+  padding-left: 11px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 100;
+
+}
+.inner-leaves-box,.employee-info,.worklist-side-buttons{
+margin-top:15px;
+}
+
+ /*popups*/
+.modal-leaves-box {
+  height: 45px;
+  width: 70px;
+  padding: 3px;
+}
+.modal-header-red {
+  background: #C1392B;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  height:30px;
+}
+.modal-header-red h4{
+margin:0;
+margin-top:4px;
+font-weight:normal;
+text-shadow:none;
+}
+.modal-header-red a{
+color:#fff;
+}
+.popup-close  i{
+color:#fff;
+font-size:17px;
+margin-top:5px;
+font-weight:normal;
+}
+.popup-content{
+padding:10px;
+}
+.no-margin{
+margin:0px;
+}
+.popup-grid-left{
+display:inline-block;
+}
+.popup-grid-middle{
+display:inline-block;
+}
+.popup-grid-right{
+display:inline-block;
+  margin-bottom: 25px;
+}
+.margin-top-10{
+margin-top:10px !important;
+}
+.modal-footer-btn{
+  width: 100px !important;
+  height: 30px;
+  border-radius: 20px !important;
+  font-size: 12px;
+  color: #fff !important;
+  font-weight: normal;
+  margin:auto;
+  text-decoration:none !important;
+  border:none !important; 
+  }
+  .popup-footer{
+  text-align:center;
+  }
+ /*dashboard*/
+.grid-bottom img{
+max-width:100%;
+}
+.grid-top img{
+max-width:100%;
+}
+.grid-block{
+padding:5px;
+position:relative;
+}
+.grid-block:nth-child(2){
+padding-left:2px;
+}
+
+
+.grid-bottom-left,.grid-bottom-right{
+padding-top:0px;
+}
+.dashboard-notif {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+.dashboard-notif-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  background: #fff;
+  text-align: center;
+  font-size: 10px;
+  color: #DD594C;
+}
+.notif-bell {
+  width: 13px;
+  height: 13px;
+}
+
+   
+
+    /* Added by Mahesh P- 15 Jul */
+
+     .no-scroll
+    {
+        overflow:hidden;
+    }
+    .module-headers
+    {
+        background-image:url('Logo_BG.png');       
+        text-align:center;       
+    }
+
+    .module-headers h4
+    {
+        color: rgb(255,255,255);  
+        font-weight:normal; 
+    }
+
+   
+    .lower-leave-text p
+    {
+        float:right;
+        font-size:20px;
+        margin-bottom:0px;
+    }
+        .upper-leave-text p
+     {
+        margin-bottom:0px;
+        font-size:12px;
+    }
+        .lower-leave-text,.upper-leave-text
+        {
+        color:#fff;
+    }
+
+    .margin-top-10
+    {
+        margin-top:10px;
+    }
+
+    .padding-10
+    {
+        padding:10px;
+    }
+}
+

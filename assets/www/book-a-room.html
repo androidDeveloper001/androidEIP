@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
+  	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/owl.carousel.js"></script>
+	  <script src="js/application.js"></script>
+        <link rel="stylesheet" href="css/master.css" />	
+        <link rel="stylesheet" href="css/main.css" />	
+		<link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/owl.theme.css" rel="stylesheet"/>
+	    <link href="css/font-awesome.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div data-role="page" class="page master-page padding-bottom">
+       <div data-role="header" class="header-inner">   
+           <img src="img/Header Slider.png" class="back-nav" onclick="window.location='room-booking.html'">
+			<div class="pageTitle"><h4 onclick="window.location='room-booking.html'">Room Booking</h4></div>
+                  <div class="status-circle"></div>
+        <!--<img src="img/active-circle.png" style="text-align:center;display: block;margin: auto;position: relative;bottom: -38px;">-->
+                <a href="#" data-role="none"></a>
+            <a href="#nav-panel-main" data-role="none"><img src="img/Menu.png" class="menu"></a> 
+           
+	  </div><!-- /header -->   
+       
+        <div class="form-body-grey" data-role="content">
+		 <div class="inner-title">
+	   <h5> <img src="img/My Leave Request.png"><span> Book a Room</span></h5>
+			</div>
+			<div class="book-room-form">
+				<div class="room-location padding-sideways">
+					
+					<p><span>Pune</span>	<span> <a href="#" id="changeLocation" >Change Location <i class="fa fa-caret-down"></i></a> </span> <span id="search-room"><i class="fa fa-angle-up"></i></span></p>
+						 <div id="changeLocation-popup">
+								<ul class="location">
+									<li><a href="">Mumbai</a></li>
+									<li><a href="">Bangalore</a></li>
+									<li><a href="">Chennai</a></li>
+									<li><a href="">Delhi</a></li>
+								</ul>
+						</div>
+					<div id="triangle-up">
+						</div>
+			</div>
+			</div>
+			<div class="book-room-form-inner">
+				<label for "From-date"> Date</label>
+					 <input type="date" class="form-control datepicker" name="From-date">
+					 <div class="ui-grid-a">
+				<div class="ui-block-a room-time ">
+					<label for "manager">From Time</label>
+					<input type="text" name="text-basic" id="text-basic" value="">
+				</div>
+
+				<div class="ui-block-b room-time">
+					<label for "manager">To Time</label>
+					<input type="text" name="text-basic" id="text-basic" value="">
+				</div>					
+				</div>
+				<button type="button" class="btn btn-form background-green margin-top-10 search-room"><i class="fa fa-search"></i>  Search</button>
+			</div>
+			
+		 <div class="inner-title margin-top-10 show-results">
+	   <h5> <img src="img/My Leave Request.png"><span> Room Available</span></h5>
+        
+		</div>
+				<div data-role="content" class="contentDashboard" >      
+					<div class="form-body-inner margin-top-10 show-results">
+					<ul class="worklist ">
+						
+							<li class="my-bookings-list">
+						 <div class="ui-grid-a margin-bottom-10">
+							 <div class="ui-block-a room-custom-grid-left">
+								<a href="room-available.html" rel="external">
+								<div class=" background-green my-booking-box background-light-green">
+									<p>Room No.</p>
+									<p>10</p>
+								</div></a>
+								
+							
+							 </div>	
+							<a href="room-available.html" rel="external">
+							<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>Lotus</h5>
+									
+									<div class="ui-grid-a room-type-details">
+										 <div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										 </div>
+										 <a href="room-available.html" rel="external">
+										  <div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										 </div>
+										 </a>
+									</div>
+							 </div>
+							</a>
+						</div>
+						 </li>
+				<li class="my-bookings-list">
+						 <div class="ui-grid-a margin-top-10 margin-bottom-10">
+							 <div class="ui-block-a room-custom-grid-left">
+							<a href="room-available.html" rel="external">
+								<div class=" background-green my-booking-box background-light-green">
+									<p>Room No.</p>
+									<p>17</p>
+								</div>
+							</a>
+							
+							 </div>	
+							<a href="room-available.html" rel="external">
+							<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>SunFlower</h5>
+									
+									<div class="ui-grid-a room-type-details">
+										 <div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										 </div>
+										  <div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										 </div>
+									</div>
+							 </div>
+							 </a>
+						</div>
+						 </li>
+							<li class="my-bookings-list">
+						 <div class="ui-grid-a margin-top-10 margin-bottom-10">
+							 <div class="ui-block-a room-custom-grid-left">
+								<a href="room-available.html" rel="external">
+								<div class=" background-green my-booking-box background-light-green">
+									<p>Room No.</p>
+									<p>12</p>
+								</div>
+								</a>
+							
+							 </div>	
+							<a href="room-available.html" rel="external">
+							<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>Aster</h5>
+									
+									<div class="ui-grid-a room-type-details">
+										 <div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										 </div>
+										  <div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										 </div>
+									</div>
+							 </div>
+							 </a>
+						</div>
+						 </li>
+	<li class="my-bookings-list">
+						 <div class="ui-grid-a margin-top-10 margin-bottom-10">
+							 <div class="ui-block-a room-custom-grid-left">
+								<a href="room-available.html" rel="external">
+								<div class=" background-green my-booking-box background-light-green">
+									<p>Room No.</p>
+									<p>14</p>
+								</div>
+								</a>
+							
+							 </div>	
+							<a href="room-available.html" rel="external">
+							<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>Rose</h5>
+									
+									<div class="ui-grid-a room-type-details">
+										 <div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										 </div>
+										  <div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										 </div>
+									</div>
+							 </div>
+							 </a>
+						</div>
+						 </li>
+						 <li class="my-bookings-list">
+						 <div class="ui-grid-a margin-top-10 margin-bottom-10">
+							 <div class="ui-block-a room-custom-grid-left">
+								
+								<div class="background-red my-booking-box">
+									<p>Room No.</p>
+									<p>17</p>
+								</div>
+								
+							
+							 </div>	
+							
+							<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>SunFlower</h5>
+								
+									<div class="ui-grid-a room-type-details">
+										 <div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										 </div>
+										  <div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										 </div>
+									</div>
+							 </div>
+							
+						</div>
+						 </li>
+						  <li class="my-bookings-list">
+						 <div class="ui-grid-a margin-top-10 margin-bottom-10">
+							 <div class="ui-block-a room-custom-grid-left">
+								
+								<div class="background-red my-booking-box">
+									<p>Room No.</p>
+									<p>17</p>
+								</div>
+								
+							
+							 </div>	
+							
+							<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>SunFlower</h5>
+								
+									<div class="ui-grid-a room-type-details">
+										 <div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										 </div>
+										  <div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										 </div>
+									</div>
+							 </div>
+							
+						</div>
+						 </li>
+						 
+						</ul>
+				
+			
+				
+	            
+           
+           </div>
+            <div data-role="panel" id="nav-panel-main" data-display="overlay" data-position="right" data-theme="c" class="navigation">
+ <ul class="nav navbar-nav">
+        <li class="active"><a href="dashboard.html">Dashboard</a></li>
+       <!--  <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">LMS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+        <li><a href="room-booking.html" rel="external">Room Booking</a></li>
+        <li><a href="travel-dashboard.html">Travel</a></li>
+		<li><a href="#">Expense</a></li>
+		<li><a href="#">Widget</a></li>
+		<li><a href="LMS-dashboard.html">LMS Dashboard</a></li>
+		<li><a href="dashboard.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>             
+        
+    <!-- /panel -->  
+
+
+       </div>            
+    </div>
+
+</div>
+<div class="filter-section">
+	<a href="filter.html" rel="external"><button type="button" class="btn btn-form background-yellow margin-top-10"><i class="fa fa-filter"></i> Filter</button></a>
+</div>
+        <div data-role="footer" data-id="footerWidgets" data-position="fixed" class="widgetfooter">
+	        <div data-role="navbar">
+			      <div id="demo">
+        <div class="container">
+          
+
+                   <div class="row">
+            <div class="span12">
+
+              <div id="owl-example" class="owl-carousel">
+
+                 
+                <div class="item forestGreen">
+                  <ul class="slide-footer">
+			    <li>
+			         <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				    <img src="img/Awards.png">
+			    	<!--<div class="notifications background-blue">1</div>-->
+					<div class="notifications background-red">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons" onclick="window.location='birthday.html'">
+				    <img src="img/More widgest.png">
+				    <!--<div class="notifications background-green">1</div>-->
+					<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				        <img src="img/Messages.png">
+						<div class="notifications background-blue">1</div>
+				        <!--<div class="notifications background-purple">1</div>-->
+			        </div>
+			
+			    </li>
+				<li>
+				  <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+					 </li>
+		       </ul>
+                </div>
+                
+                   <ul class="slide-footer">
+			    <li>
+			         <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-purple">1</div>
+			         </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				    <img src="img/Awards.png">
+			    	<!--<div class="notifications background-blue">1</div>-->
+					<div class="notifications background-green">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons" onclick="window.location='birthday.html'">
+				    <img src="img/Birthday.png">
+				    <!--<div class="notifications background-green">1</div>-->
+					<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				        <img src="img/Messages.png">
+				        <!--<div class="notifications background-purple">1</div>-->
+						<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+	<li>
+				  <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+					 </li>
+		       </ul>
+              
+
+      
+                
+				
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+		      
+	        </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div>  
+</div>	
+<div class="setting-panel">
+    <div class="setting-panel-inner">
+     <ul class="Leave-actions">
+		<li><a href="book-a-room.html" rel="external"><span class="nav-image"> <img src="img/Apply Leave.png"></span><span  class="leave-actions-text">Book a Room</span><span class="icon-right"><img src="img/Arrow 1.png" ></span></a></li>
+		<li><a href="my-bookings.html" rel="external"><span class="nav-image"><img src="img/My Leave Request.png"></span> <span class="leave-actions-text">My Bookings</span><span class="icon-right"><img src="img/Arrow 2.png"></span></a></li>
+		<li><a href="room-info.html"rel="external"><span class="nav-image"><img src="img/Holiday list.png"></span><span class="leave-actions-text"> Room Information</span><span class="icon-right"><img src="img/Arrow 2.png"></span></a></li>
+	</ul>
+	  <ul class="Leave-actions-icons">
+			<li><a href="book-a-room.html" rel="external"><img src="img/Apply Leave.png"></a></li>
+			<li><a href="my-bookings.html" rel="external"><img src="img/My Leave Request.png"></a> </li>
+			<li><a href="room-info.html"rel="external"><img src="img/Holiday list.png"></a></li>
+	</ul>
+	<div class="setting-panel-btn setting-panel-btn-show">
+	<span class="side-bar-nav"><i class="fa fa-angle-right"></i></span>
+    </div>
+    </div>
+   </div>
+   <script src="js/application.js"></script>
+<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel({
+			  items : 4,
+			 itemsDesktop : [600,3],
+			  itemsDesktopSmall : [600,3]
+		 
+		  });;
+		  $('a').css("text-decoration","none !important");
+		  $('a').css("color","#fff !important");
+    });
+
+	</script>
+
+
+
+
+
+
+</body>
+     
+</html>

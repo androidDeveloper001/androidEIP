@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />		
+  	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+
+    <!-- Custom Css and Js -->
+
+    <script src="js/owl.carousel.js"></script>
+	  <script src="js/application.js"></script>
+        <link rel="stylesheet" href="css/master.css" />	
+        <link rel="stylesheet" href="css/main.css" />	
+		<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	  <link href="css/font-awesome.css" rel="stylesheet">
+</head>
+<body >  	
+    <div data-role="page" class="page master-page">
+	
+       <div data-role="header" class="header-inner">   
+           <img src="img/Header Slider.png" class="back-nav" onclick="window.location='dashboard.html'">
+			<div class="pageTitle"><h4 onclick="window.location='LMS-dashboard.html'"> Leave Management</h4></div>
+			<div class="status-circle-apply status-circle">	</div>
+                <a href="#" data-role="none"></a>           
+            <a href="#nav-panel-main" data-role="none" > <img src="img/Menu.png" class="menu"></a>  
+			</div><!-- /header -->   
+			
+<div id="owl-demo">
+          
+  <div class="item"> 
+  <ul class="leave-type-slide">
+			
+			    <li>
+			    <div class=" leave-type-slideBox background-green padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+			    <li>
+			      <div class="leave-type-slideBox background-yellow padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+			    <li>
+			         <div class="leave-type-slideBox background-blue padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+			
+		       </ul>
+			   </div>
+			   <div class="item"> 
+  <ul class="leave-type-slide">
+			    <li>
+			         <div class="leave-type-slideBox background-blue padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+			    <li>
+			    <div class=" leave-type-slideBox background-green padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+			    <li>
+			      <div class="leave-type-slideBox background-yellow padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+		
+			
+		       </ul>
+			   </div>
+  <div class="item"> 
+  <ul class="leave-type-slide">
+			    <li>
+			         <div class="leave-type-slideBox background-blue padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+			    <li>
+			    <div class="leave-type-slideBox background-blue padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+			    <li>
+			      <div class="leave-type-slideBox background-yellow padding-5">
+				<div class="upper-leave-text margin-top-5">
+					<p>PL</p>
+				</div>
+				<div class="lower-leave-text">
+					<p class="no-margin">10.5</p>
+				</div>
+			</div>
+			
+			    </li>
+		
+			
+		       </ul>
+			   </div>
+ 
+
+
+ 
+</div>
+        <div class="form-body-grey no-scroll" data-role="content">
+				 <div class="inner-title">
+					<h5><img src="img/Apply Leave.png"><span> Apply Leave</span></h5>
+					
+			</div>
+				<div data-role="content" class="contentDashboard" >      
+					<div class="form-body-inner margin-top-10">
+					<div class="form-group ">
+						<label for="select-leave-type">Leave Type</label>
+							<select class="form-control-select" name="select-leave-type" data-role= "none">
+								<option>Select</option>
+								<option>PL</option>
+								<option>CL</option>
+							</select>
+						</div>
+						
+				<div class="ui-grid-solo margin-top-10">
+					
+						<div class="checkBx-inline"><label for ="leave-type"><input type="radio" name="leave-type" data-role= "none"><span>Full Day</span></label></div>
+						<div class="checkBx-inline">	<label for ="leave-type" class="checkBx-inline"><input type="radio"  name="leave-type" data-role= "none"> <span>Half Day*</span></label></div>
+
+					
+						
+				</div>
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+							<label for="To-date">From Date</label>
+							 <input type="date" class="form-control datepicker" name="To-date">
+					</div>
+					<div class="ui-block-b">
+							<label for="To-date">To Date</label>
+							 <input type="date" class="form-control datepicker" name="To-date">
+					</div>
+					<div class="ui-block-c">
+							<div class="day-box background-green"><p> 17 Days</p></div>
+					</div>
+				</div>
+				<div class="ui-grid-solo">
+					<label for "leave-reason">Reason*</label>
+					<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+				</div>
+				<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<label for "manager">Reporting Manager</label>
+					<input type="text" name="text-basic" id="text-basic" value="Tanveer Patel">		
+				</div>	
+				<div class="ui-block-b">
+					<label for "manager">Emergency  No.</label>
+					<input type="text" name="text-basic" id="text-basic" value="8956324856">		
+				</div>					
+				</div>
+
+
+
+            <div data-role="panel" id="nav-panel-main" data-display="overlay" data-position="right" data-theme="c" class="navigation">
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="room-booking.html">Room Booking</a></li>
+        <li><a href="travel-dashboard.html">Travel</a></li>
+		<li><a href="#">Expense</a></li>
+		<li><a href="#">Widget</a></li>
+				<li><a href="LMS-dashboard.html" rel="external">Leave Management System</a></li>
+
+		<li><a href="dashboard.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>             
+        
+    </div><!-- /panel -->  
+
+
+       </div>            
+    </div>
+	<div class="footer-content">
+		<div class="ui-grid-a form-action-buttons">
+			<div class="ui-block-a">
+				<a href="#popupBasic-user" data-rel="popup" class="default-color">
+					<button type="button" class="btn btn-form background-yellow float-right"><i class="fa fa-check-circle-o"></i> Submit</button>
+				</a>
+					<a href="#popupBasic-user" data-rel="popup">
+								</a>
+									<a href="#popupBasic-user" >
+									<div data-role="popup" id="popupBasic-user" data-position-to="window" data-overlay-theme="a" data-rel="back">
+										 <div class="modal-header-red background-green">
+										  <a href="#" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle modal-close" ></span></a>
+										  <h4 class="modal-title">Success!</h4>
+										</div>
+										<div class="ui-grid-solo popup-content">
+											
+											<p>You have successfully applied for a leave</p>
+
+											<a href="#" data-rel="back" data-theme="a" data-iconpos="notext" class="ui-btn-right popup-close"><i class="fa fa-times-circle-o"></i></a>
+										<div class="popup-footer">
+											<a href="leave-request.html"  rel="external"><button type="button" class="background-yellow modal-footer-btn" ><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Ok</button></a>
+										</div>
+									</div>
+									</div>
+								</a>
+			</div>
+			<div class="ui-block-b">
+				<button type="button" class="btn btn-form background-green "><i class="fa fa-times-circle-o"></i> Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+        <div data-role="footer" data-id="footerWidgets" data-position="fixed" class="widgetfooter">
+	        <div data-role="navbar">
+			      <div id="demo">
+        <div class="container">
+          
+
+                   <div class="row">
+            <div class="span12">
+
+              <div id="owl-example" class="owl-carousel">
+
+                 
+                <div class="item forestGreen">
+                  <ul class="slide-footer">
+			    <li>
+			         <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				    <img src="img/Awards.png">
+			    	<!--<div class="notifications background-blue">1</div>-->
+					<div class="notifications background-red">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons" onclick="window.location='birthday.html'">
+				    <img src="img/More widgest.png">
+				    <!--<div class="notifications background-green">1</div>-->
+					<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				        <img src="img/Messages.png">
+						<div class="notifications background-blue">1</div>
+				        <!--<div class="notifications background-purple">1</div>-->
+			        </div>
+			
+			    </li>
+				<li>
+				  <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+					 </li>
+		       </ul>
+                </div>
+                <div class="item orange">
+                   <ul class="slide-footer">
+			    <li>
+			         <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-purple">1</div>
+			         </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				    <img src="img/Awards.png">
+			    	<!--<div class="notifications background-blue">1</div>-->
+					<div class="notifications background-green">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons" onclick="window.location='birthday.html'">
+				    <img src="img/Birthday.png">
+				    <!--<div class="notifications background-green">1</div>-->
+					<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				        <img src="img/Messages.png">
+				        <!--<div class="notifications background-purple">1</div>-->
+						<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+	<li>
+				  <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+					 </li>
+		       </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	        </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div>  
+</div>	
+		<div class="setting-panel">
+    <div class="setting-panel-inner">
+     <ul class="Leave-actions">
+		<li><a href="apply-leave.html" rel="external"><span class="nav-image"> <img src="img/Apply Leave.png"></span><span  class="leave-actions-text">Apply Leave</span><span class="icon-right"><img src="img/Arrow 1.png" ></span></a></li>
+		<li><a href="leave-request.html" rel="external"><span class="nav-image"><img src="img/My Leave Request.png"></span> <span class="leave-actions-text">My Leave Request</span><span class="icon-right"><img src="img/Arrow 2.png"></span></a></li>
+		<li><a href="my-worklist.html" rel="external"><span class="nav-image"><img src="img/My Work List.png"></span> <span class="leave-actions-text">My Work List</span><span class="icon-right"><img src="img/Arrow 2.png" ></span></a></li>
+		<li><a href="Team-Leave-Calender.html"rel="external"><span class="nav-image"><img src="img/Team Leave Calendar.png"></span><span class="leave-actions-text"> Team Leave Calender</span><span class="icon-right"><img src="img/Arrow 2.png"></span></a></li>
+		<li><a href="holiday-list.html"rel="external"><span class="nav-image"><img src="img/Holiday list.png"></span><span class="leave-actions-text"> Holiday List</span><span class="icon-right"><img src="img/Arrow 2.png"></span></a></li>
+	</ul>
+	  <ul class="Leave-actions-icons">
+			<li><a href="apply-leave.html" rel="external"><img src="img/Apply Leave.png"></li>
+			<li><a href="leave-request.html" rel="external"><img src="img/My Leave Request.png"></a> </li>
+			<li><a href="my-worklist.html" rel="external"><img src="img/My Work List.png"> </a></li>
+			<li><a href="Team-Leave-Calender.html"rel="external"><img src="img/Team Leave Calendar.png"> </a></li>
+			<li><a href="holiday-list.html"rel="external"><img src="img/Holiday list.png"></a></li>
+			<li><a href="#" rel="external"><img src="img/Leave Management Policy.png"></a></li>
+	</ul>
+	<div class="setting-panel-btn setting-panel-btn-show">
+	<span class="side-bar-nav"><i class="fa fa-angle-right"></i></span>
+    </div>
+    </div>
+	</div>
+<script src="js/application.js"></script>
+<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel();
+	  var winHeight=$(window).height();
+	  var winWidth=$(window).width();
+	if(winHeight<481){
+	
+	$('.form-action-buttons').css('bottom','-14vh');
+	}
+	  $("#owl-demo").owlCarousel({
+ 
+       //Set AutoPlay to 3 seconds
+ 
+      items : 3,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+    });
+
+	</script>
+</body>
+     
+</html>

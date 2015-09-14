@@ -1,0 +1,97 @@
+@media screen and (min-width:240px)
+{
+    .profile-info
+   {
+     margin-top:35px;
+     text-align:center;
+     
+   }
+    .holiday-info p:nth-child(3)
+    {
+        font-weight:bold;
+    }
+    .div-profile
+    {
+     background-image: url('BG.png');
+     background-size: cover;
+     height: 110px;
+     overflow:hidden;
+    }
+
+    .no-padding
+    {
+    padding-right:0px;
+    padding-left:0px;
+    }
+    .no-margin-padding
+    {
+        margin:0px;
+        padding:0px;
+    }
+    .profileinfo
+    {
+        bottom:10px;
+    }
+    .profile-info h4
+    {
+        margin-top: 50px;
+        margin-bottom:0px !important;
+    }
+
+    .profile-info p
+    {
+      font-size:10px;
+    }
+
+    .grey-bar
+    {
+        background:#28344C;
+        height:35px;
+        padding:0px !important;
+    }
+    .grey-bar h5
+   {
+    color:#fff;
+/* font-weight:bold; */  
+   font-weight:normal; 
+     text-align: left !important; 
+     padding:10px;
+     margin:0px;
+   }
+
+    /*Mahesh- 15 Jul - Leave request Page */
+
+    .inner-title img
+    {
+        height:15px;
+        width:15px;
+
+    }
+
+    .inner-title h5
+    {
+       font-weight:normal;
+    }
+
+
+    /*End - Leave request Page */
+
+    .Leave-actions,.worklist
+    {
+        list-style:none;
+        padding:0;
+        overflow:hidden;
+    /* margin-bottom:95px; */
+    }
+
+    .holiday-info
+    {
+          margin-top: -6px;
+        margin-bottom:5px;
+    }
+
+    .holiday-li
+    {
+        height:55px;
+    }
+}

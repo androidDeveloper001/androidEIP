@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+
+	<!-- Custom Css and Js -->
+
+	<script src="js/owl.carousel.js"></script>
+
+	<link rel="stylesheet" href="css/master.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+</head>
+<body >
+<div data-role="page" class="master-page">
+	 <div data-role="header" class="module-headers no-padding">
+	<img src="img/Header Slider.png" class="back-nav" onclick="window.location='dashboard.html'"/>
+	<div class="pageTitle"><h4 onclick="window.location='room-booking.html'">Room Booking</h4></div>
+	<div class="status-circle">
+	</div>
+	<!--<img src="img/active-circle.png" style="text-align:center;display: block;margin: auto;position: relative;bottom: -38px;">-->
+	<a href="#" data-role="none"></a>
+	<a href="#nav-panel-main" data-role="none" ><img src="img/Menu.png" class="menu"></a> 
+
+</div><!-- /header -->
+	<div data-role="content" class="form-body-grey no-scroll">
+		<div class="ui-grid-b">
+			<div class="ui-block-a margin-right">
+				<div class="room-booking-box background-green show-rooms">
+					<div class="upper-count">
+						<div class="leaves-circle upper-count-circle">12
+						</div>
+					</div>
+					<div class="lower-box-text">
+						<p>My Bookings</p>
+					</div>
+				</div>
+			</div>
+			<div class="ui-block-b">
+				<div class="room-booking-box background-blue show-notifications">
+					<div class="upper-count">
+						<div class="leaves-circle upper-count-circle">12
+						</div>
+					</div>
+					<div class="lower-box-text">
+						<p>Notifications</p>
+					</div>
+				</div>
+			</div>
+			<div class="ui-block-c">
+
+			</div>
+		</div>
+		<div class="inner-title margin-top-10">
+			<h5> <img src="img/My Leave Request.png"><span> Book a Room</span></h5>
+		</div>
+		<div data-role="content" class="contentDashboard margin-top-10">
+			<div class="form-body-inner  room-list">
+				<ul class="worklist ">
+					<li class="my-bookings-list">
+						<div class="ui-grid-a margin-bottom-10">
+							<div class="ui-block-a room-custom-grid-left">
+								<a href="#popupBasic-user">
+									<div class=" background-green my-booking-box">
+										<p>Room No.</p>
+										<p>10</p>
+									</div>
+								</a>
+
+							</div>
+							<a href="#popupBasic-user" data-rel="popup" class="default-color">
+								<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>Lotus</h5>
+									<div class="room-actions">
+										<a href="book-a-room.html" rel="external"><div class="room-action-circle background-green display-inline"><i class="fa fa-pencil"></i>
+										</div>
+										</a>
+										<a href="#cancel-room-booking" data-rel="popup"><div class="room-action-circle background-red display-inline"><i class="fa fa-times"></i></div></a>
+										<div>
+											<a href="#popupBasic">
+												<div data-role="popup" id="cancel-room-booking" data-position-to="window" data-overlay-theme="a" data-rel="back">
+													<div class="modal-header-red">
+														<a href="#" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle modal-close" ></span></a>
+														<h4 class="modal-title">Cancel My Booking</h4>
+													</div>
+													<div class="ui-grid-a popup-content">
+														<div class="ui-block-a room-custom-grid-left">
+															<a href="#popupBasic-user" class="ui-link" style="text-decoration: none;">
+																<div class=" background-green my-booking-box margin-bottom-10">
+																	<p>Room No.</p>
+																	<p>10</p>
+																</div>
+															</a>
+
+														</div>
+														<div class="ui-block-b room-details room-custom-grid-right">
+															<h5>Lotus</h5>
+
+															<div class="ui-grid-a room-type-details">
+																<div class="ui-block-a room-custom-grid-left">
+																	<p> Wing: A</p>
+																	<p>  Floor: 04</p>
+																	<p>  City: Pune </p>
+																</div>
+																<div class="ui-block-b room-custom-grid-right">
+																	<p> Room Type: Training Room</p>
+																	<p> Seating Capacity: 20</p>
+																	<p> Facility:WiFi, Projector</p>
+																</div>
+															</div>
+														</div>
+
+														<textarea cols="15" rows="8" name="textarea" id="textarea" class="margin-top-10" placeholder="Comments"></textarea>
+														<a href="#" data-rel="back" data-theme="a" data-iconpos="notext" class="ui-btn-right popup-close"><img src="img/Cancel.png"></a>
+														<div class="popup-footer">
+															<a href="#" data-rel="back" data-theme="a" class="no-shadow"><button type="button" class="background-red modal-footer-btn cancel-reuest-btn" ><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span><i class="fa fa-check-circle"></i> Cancel Booking </button></a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<!--end-room-actions-->
+									<div class="ui-grid-a room-type-details">
+										<div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										</div>
+										<div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="my-bookings-list">
+						<div class="ui-grid-a margin-top-10 margin-bottom-10">
+							<div class="ui-block-a room-custom-grid-left">
+								<a href="#popupBasic-user">
+									<div class=" background-green my-booking-box">
+										<p>Room No.</p>
+										<p>17</p>
+									</div>
+								</a>
+
+							</div>
+							<a href="#popupBasic-user" data-rel="popup" class="default-color">
+								<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>SunFlower</h5>
+									<div class="room-actions">
+										<!--Made change here-->
+										<a href="book-a-room.html" rel="external"><div class="room-action-circle background-green display-inline"><i class="fa fa-pencil"></i>
+										</div>
+										</a>
+										<a href="#cancel-room-booking" data-rel="popup"><div class="room-action-circle background-red display-inline"><i class="fa fa-times"></i></div></a>
+									</div>
+									<div class="ui-grid-a room-type-details">
+										<div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										</div>
+										<div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="my-bookings-list">
+						<div class="ui-grid-a margin-top-10 margin-bottom-10">
+							<div class="ui-block-a room-custom-grid-left">
+								<a href="#popupBasic-user">
+									<div class=" background-green my-booking-box">
+										<p>Room No.</p>
+										<p>12</p>
+									</div>
+								</a>
+
+							</div>
+							<a href="#popupBasic-user" data-rel="popup" class="default-color">
+								<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>Aster</h5>
+									<div class="room-actions">
+										<a href="book-a-room.html" rel="external"><div class="room-action-circle background-green display-inline"><i class="fa fa-pencil"></i>
+										</div>
+										</a>
+										<a href="#cancel-room-booking" data-rel="popup">	<div class="room-action-circle background-red display-inline"><i class="fa fa-times"></i></div></a>
+									</div>
+									<div class="ui-grid-a room-type-details">
+										<div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										</div>
+										<div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="my-bookings-list">
+						<div class="ui-grid-a margin-top-10 margin-bottom-10">
+							<div class="ui-block-a room-custom-grid-left">
+								<a href="#popupBasic-user">
+									<div class=" background-green my-booking-box">
+										<p>Room No.</p>
+										<p>14</p>
+									</div>
+								</a>
+
+							</div>
+							<a href="#popupBasic-user" data-rel="popup" class="default-color">
+								<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>Rose</h5>
+									<div class="room-actions">
+										<!--Made change here-->
+										<a href="book-a-room.html" rel="external"><div class="room-action-circle background-green display-inline"><i class="fa fa-pencil"></i>
+										</div>
+										</a>
+										<a href="#cancel-room-booking" data-rel="popup"><div class="room-action-circle background-red display-inline"><i class="fa fa-times"></i></div></a>
+									</div>
+									<div class="ui-grid-a room-type-details">
+										<div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										</div>
+										<div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="my-bookings-list">
+						<div class="ui-grid-a margin-top-10 margin-bottom-10">
+							<div class="ui-block-a room-custom-grid-left">
+								<a href="#popupBasic-user">
+									<div class=" background-green my-booking-box">
+										<p>Room No.</p>
+										<p>17</p>
+									</div>
+								</a>
+
+							</div>
+							<a href="#popupBasic-user" data-rel="popup" class="default-color">
+								<div class="ui-block-b room-details room-custom-grid-right">
+									<h5>SunFlower</h5>
+									<div class="room-actions">
+										<div class="room-action-circle background-green display-inline"><i class="fa fa-pencil"></i>
+										</div>
+										<a href="#cancel-room-booking" data-rel="popup">	<div class="room-action-circle background-red display-inline"><i class="fa fa-times"></i></div></a>
+									</div>
+									<div class="ui-grid-a room-type-details">
+										<div class="ui-block-a room-custom-grid-left">
+											<p> Wing: A</p>
+											<p>  Floor: 04</p>
+											<p>  City: Pune </p>
+										</div>
+										<div class="ui-block-b room-custom-grid-right">
+											<p> Room Type: Training Room</p>
+											<p> Seating Capacity: 20</p>
+											<p> Facility:WiFi, Projector</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+
+
+
+
+
+			</div>
+		</div>
+		<div id="tab-my-bookings">
+			<ul data-role="listview" data-inset="true" class="alert-list">
+				<li>
+					<p>Lily Whiteman booked a meeting room</p>
+					<p>13 July, 2015 | 2.00pm</p>
+					<div class="read-more-arrow">
+
+						<i class="fa fa-plus-circle"></i>
+
+
+					</div>
+					<ul class="alert-list-inner"   data-role="listview">
+						<li>Room name: Lotus</li>
+						<li>Date: 7th November,2015</li>
+						<li>Time: 02:30-04:30pm</li>
+					</ul>
+				</li>
+				<li>
+					<p>James Potter booked a conference room</p>
+					<p>25 July, 2015 | 11.00am</p>
+					<div class="read-more-arrow">
+						<div class="toggle-icon plus">
+							<i class="fa fa-plus-circle"></i>
+						</div>
+
+					</div>
+					<ul class="alert-list-inner"   data-role="listview">
+						<li>Room name: Rose</li>
+						<li>Date: 2nd November, 2015</li>
+						<li>Time: 10:30-11:30am</li>
+					</ul>
+				</li>
+				<li>
+					<p>Lily Whiteman cancelled the booking</p>
+					<p>03 August, 2015 | 3.15pm</p>
+					<div class="read-more-arrow">
+						<div class="toggle-icon plus">
+							<i class="fa fa-plus-circle"></i>
+						</div>
+
+					</div>
+					<ul class="alert-list-inner" data-role="listview">
+						<li>Room name: Lotus</li>
+						<li>Date: 7th Novemeber,2015</li>
+						<li>Time: 02:30-04:30 pm</li>
+					</ul>
+				</li>
+				<li>
+					<p>Daniel Bryan booked a training room </p>
+					<p>13 July, 2015 | 2.00pm</p>
+					<div class="read-more-arrow">
+						<div class="toggle-icon plus">
+							<i class="fa fa-plus-circle"></i>
+						</div>
+
+					</div>
+					<ul class="alert-list-inner"   data-role="listview">
+						<li>Room name: Sunflower</li>
+						<li>Date: 25th October,2015</li>
+						<li>Time: 01:00-03:00pm</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div data-role="footer" data-id="footerWidgets" data-position="fixed" class="widgetfooter">
+		<div data-role="navbar">
+			<div id="demo">
+				<div class="container">
+
+
+					<div class="row">
+						<div class="span12">
+
+							<div id="owl-example" class="owl-carousel">
+
+
+								<div class="item forestGreen">
+									<ul class="slide-footer">
+										<li>
+											<div class="slide-icons">
+												<img src="img/Anniversary.png">
+												<!-- <div class="notifications background-red">1</div>-->
+												<div class="notifications background-green">1</div>
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons">
+												<img src="img/Awards.png">
+												<!--<div class="notifications background-blue">1</div>-->
+												<div class="notifications background-red">1</div>
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons" onclick="window.location='birthday.html'">
+												<img src="img/More widgest.png">
+												<!--<div class="notifications background-green">1</div>-->
+												<div class="notifications background-purple">1</div>
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons">
+												<img src="img/Messages.png">
+												<div class="notifications background-blue">1</div>
+												<!--<div class="notifications background-purple">1</div>-->
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons">
+												<img src="img/Anniversary.png">
+												<!-- <div class="notifications background-red">1</div>-->
+												<div class="notifications background-green">1</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="item orange">
+									<ul class="slide-footer">
+										<li>
+											<div class="slide-icons">
+												<img src="img/Anniversary.png">
+												<!-- <div class="notifications background-red">1</div>-->
+												<div class="notifications background-purple">1</div>
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons">
+												<img src="img/Awards.png">
+												<!--<div class="notifications background-blue">1</div>-->
+												<div class="notifications background-green">1</div>
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons" onclick="window.location='birthday.html'">
+												<img src="img/Birthday.png">
+												<!--<div class="notifications background-green">1</div>-->
+												<div class="notifications background-purple">1</div>
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons">
+												<img src="img/Messages.png">
+												<!--<div class="notifications background-purple">1</div>-->
+												<div class="notifications background-purple">1</div>
+											</div>
+
+										</li>
+										<li>
+											<div class="slide-icons">
+												<img src="img/Anniversary.png">
+												<!-- <div class="notifications background-red">1</div>-->
+												<div class="notifications background-green">1</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+
+
+
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- /navbar -->
+		</div>
+	</div>  <!-- /footer -->
+	<div data-role="panel" id="nav-panel-main" data-display="overlay" data-position="right" data-theme="c" class="navigation">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="dashboard.html">Dashboard</a></li>
+			<li><a href="room-booking.html" rel="external">Room Booking</a></li>
+			<li><a href="travel-dashboard.html">Travel</a></li>
+			<li><a href="#">Expense</a></li>
+			<li><a href="#">Widget</a></li>
+			<li><a href="LMS-dashboard.html" rel="external">Leave Management System</a></li>
+			<li><a href="dashboard.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+		</ul>
+	</div>
+
+</div>
+<div class="setting-panel">
+	<div class="setting-panel">
+		<div class="setting-panel-inner">
+			<ul class="Leave-actions">
+				<li><a href="book-a-room.html" rel="external"><span class="nav-image"> <img src="img/Apply Leave.png"></span><span  class="leave-actions-text">Book a Room</span><span class="icon-right"><img src="img/Arrow 1.png" ></span></a></li>
+				<li><a href="my-bookings.html" rel="external"><span class="nav-image"><img src="img/My Leave Request.png"></span> <span class="leave-actions-text">My Bookings</span><span class="icon-right"><img src="img/Arrow 2.png"></span></a></li>
+				<li><a href="room-info.html"rel="external"><span class="nav-image"><img src="img/Holiday list.png"></span><span class="leave-actions-text"> Room Information</span><span class="icon-right"><img src="img/Arrow 2.png"></span></a></li>
+			</ul>
+			<ul class="Leave-actions-icons">
+				<li><a href="book-a-room.html" rel="external"><img src="img/Apply Leave.png"></a></li>
+				<li><a href="my-bookings.html" rel="external"><img src="img/My Leave Request.png"></a></li>
+				<li><a href="room-info.html"rel="external"><img src="img/Holiday list.png"></a></li>
+			</ul>
+			<div class="setting-panel-btn setting-panel-btn-show">
+				<span class="side-bar-nav"><i class="fa fa-angle-right"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- /panel -->
+<script src="js/application.js"></script>
+
+</body>
+
+</html>

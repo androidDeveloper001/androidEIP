@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />		
+  	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>	
+	
+    <!-- Custom Css and Js -->
+	  
+    <script src="js/owl.carousel.js"></script>
+	  <script src="js/application.js"></script>
+        <link rel="stylesheet" href="css/master.css" />	
+        <link rel="stylesheet" href="css/main.css" />	
+		<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	    <link href="css/font-awesome.css" rel="stylesheet">
+</head>
+<body >  	
+
+    <div data-role="page" class="page master-page">
+     <!-- /header -->   
+       
+        <div class="form-body-grey background-dark-gray  padding-top-0 no-padding" data-role="content">
+			<div class="filter-title">
+					<span><img src="img/filter.png"></span><span> <p>Filter</p></span>
+			</div>
+			<div class="form-body-filter">
+				 <div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div class="form-group filter-grid">
+						<label for="room-type">Room Type</label>
+							<select class="form-control-select" name="room-type" data-role= "none">
+								<option>Select</option>
+								<option>conference room</option>
+								<option>meeting room</option>
+							</select>
+						</div>
+					</div>
+						<div class="ui-block-b filter-grid">
+							<label for "capacity">Seating Capacity</label>
+					<input type="text" name="text-basic" id="text-basic" value="52" >	
+					</div>
+						<div class="filter-grid">
+								<label for "capacity">Room Name</label>
+					<input type="text" name="text-basic" id="text-basic" value="Lotus" >	
+						</div>
+				 </div>
+				 		 <div class="ui-grid-a margin-top-10 advanced-filter">
+					<div class="ui-block-a ">
+						<div class="form-group filter-grid">
+						
+							<select class="form-control-select" name="room-type" data-role= "none">
+								<option>Building</option>
+								<option>conference room</option>
+								<option>meeting room</option>
+							</select>
+						</div>
+					</div>
+						<div class="ui-block-b filter-grid">
+								<select class="form-control-select" name="room-type" data-role= "none">
+								<option>Floor</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+					</div>
+						
+				 </div>
+				</div>
+				<ul class="filter-list">
+					<li>
+						<label for="WiFi">WiFi</label>
+						<input type="checkbox" name="favcolor" id="WiFi" value="WiFi">
+					</li>
+					<li>
+						<label for="Calling">Calling</label>
+						<input type="checkbox" name="favcolor" id="Calling" value="Calling" >
+					</li>
+					<li>
+						<label for="Printer">Printer</label>
+						<input type="checkbox" name="favcolor" id="Printer" value="Printer">
+					</li>
+					<li>
+						<label for="Projector">Projector</label>
+						<input type="checkbox" name="favcolor" id="Projector" value="Projector">
+					</li>
+					<li>
+						<label for="White Board">White Board</label>
+						<input type="checkbox" name="favcolor" id="White Board" value="White Board">
+					</li>
+					<li>
+						<label for="Stationery">Stationery</label>
+						<input type="checkbox" name="favcolor" id="Stationery" value="Stationery">
+					</li>
+					<li>
+						<label for="ISD">ISD</label>
+						<input type="checkbox" name="favcolor" id="ISD" value="ISD">
+					</li>
+					</ul>
+					<a href="book-a-room.html" rel="external"><button type="button" class="btn btn-form background-yellow margin-top-10 filter-search"><i class="fa fa-search"></i>  Search</button></a>
+				</div>
+		
+		
+        <div data-role="footer" data-id="footerWidgets" data-position="fixed" class="widgetfooter">
+	        <div data-role="navbar">
+			      <div id="demo">
+        <div class="container">
+          
+
+                   <div class="row">
+            <div class="span12">
+
+              <div id="owl-example" class="owl-carousel">
+
+                 
+                <div class="item forestGreen">
+                  <ul class="slide-footer">
+			    <li>
+			         <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				    <img src="img/Awards.png">
+			    	<!--<div class="notifications background-blue">1</div>-->
+					<div class="notifications background-red">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons" onclick="window.location='birthday.html'">
+				    <img src="img/More widgest.png">
+				    <!--<div class="notifications background-green">1</div>-->
+					<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				        <img src="img/Messages.png">
+						<div class="notifications background-blue">1</div>
+				        <!--<div class="notifications background-purple">1</div>-->
+			        </div>
+			
+			    </li>
+				<li>
+				  <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+					 </li>
+		       </ul>
+                </div>
+                
+                   <ul class="slide-footer">
+			    <li>
+			         <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-purple">1</div>
+			         </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				    <img src="img/Awards.png">
+			    	<!--<div class="notifications background-blue">1</div>-->
+					<div class="notifications background-green">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons" onclick="window.location='birthday.html'">
+				    <img src="img/Birthday.png">
+				    <!--<div class="notifications background-green">1</div>-->
+					<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+			    <li>
+			        <div class="slide-icons">
+				        <img src="img/Messages.png">
+				        <!--<div class="notifications background-purple">1</div>-->
+						<div class="notifications background-purple">1</div>
+			        </div>
+			
+			    </li>
+	<li>
+				  <div class="slide-icons">
+				     <img src="img/Anniversary.png">
+			    	<!-- <div class="notifications background-red">1</div>-->
+					<div class="notifications background-green">1</div>
+			         </div>
+					 </li>
+		       </ul>
+              
+
+      
+                
+				
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+		      
+	        </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div>  
+</div>	
+
+   <script src="js/application.js"></script>
+<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel({
+			  items : 4,
+			 itemsDesktop : [600,3],
+			  itemsDesktopSmall : [600,3]
+		 
+		  });;
+		  $('a').css("text-decoration","none !important");
+		  $('a').css("color","#fff !important");
+    });
+
+	</script>
+
+
+
+
+
+
+</body>
+     
+</html>
